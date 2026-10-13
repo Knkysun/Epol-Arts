@@ -46,17 +46,6 @@ nav a:hover {
     color: #E85CCF;
 }
 
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #1A1A1A;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #E85CCF;
-}
 .hero {
     padding: 120px 20px;
     text-align: center;
