@@ -6,33 +6,33 @@ body {
     color: #1A1A1A; /* noir métal */
 }
 
-/* Header */
+/* Header moderne */
 header {
-    background: rgba(135, 206, 250, 0.4); /* bleu ciel pastel translucide */
-    backdrop-filter: blur(10px);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.25); /* translucide */
+    backdrop-filter: blur(12px);
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 header h1 {
     color: #E85CCF; /* fuchsia clair */
+    font-size: 32px;
     margin: 0;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: #1A1A1A;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-/* Section hero */
-.hero {
-    padding: 80px 20px;
-    text-align: center;
-    background: #fff;
-    color: #1A1A1A;
+nav a:hover {
+    color: #E85CCF;
 }
+
 
