@@ -73,11 +73,10 @@ nav a:hover {
 /* Animation du défilement */
 @keyframes slideAnimation {
     0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
 }
-
 /* Filtre translucide + texte */
 .hero-content {
     position: absolute;
