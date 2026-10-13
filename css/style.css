@@ -4,11 +4,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(
         180deg,
-        #E6F7FF,
-        #F2FF8C
+        #E6F7FF 0%,
+        #F2FF8C 100%
     );
     color: #1A1A1A;
 }
+
 /* Header moderne */
 header {
     background: rgba(255, 255, 255, 0.25); /* translucide */
@@ -19,11 +20,30 @@ header {
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
-
+header {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
 header h1 {
-    color: #E85CCF; /* fuchsia clair */
+    color: #E85CCF;
     font-size: 32px;
     margin: 0;
+}
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #E85CCF;
 }
 
 nav a {
@@ -50,7 +70,6 @@ nav a:hover {
     width: 80%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-
 .hero h2 {
     font-size: 36px;
     color: #1A1A1A;
@@ -60,5 +79,4 @@ nav a:hover {
     font-size: 20px;
     color: #333;
 }
-
 
