@@ -1,34 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epol-Arts</title>
+    <title>Epol-Arts | Accueil</title>
+    <meta name="description" content="Epol-Arts, plateforme artistique contemporaine pour les arts visuels, la scène, la littérature et le design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <div class="brand-mark">E</div>
+            <h1>Epol-Arts</h1>
+        </div>
 
-<header>
-    <h1>Epol-Arts</h1>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="pages/about.html">À propos</a>
-        <a href="pages/gallery.html">Galerie</a>
-        <a href="pages/contact.html">Contact</a>
-    </nav>
-</header>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="pages/about.html">À propos</a>
+            <a href="pages/gallery.html">Galerie</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
 
-<section class="hero-slider">
-    <div class="slides">
-        <div class="slide" style="background-image: url('images/slide1.jpg');"></div>
-        <div class="slide" style="background-image: url('images/slide2.jpg');"></div>
-        <div class="slide" style="background-image: url('images/slide3.jpg');"></div>
-    </div>
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <span class="eyebrow">Créativité • Culture • Innovation</span>
+                <h2>Des arts qui inspirent, racontent et connectent.</h2>
+                <p>
+                    Epol-Arts célèbre les expressions artistiques contemporaines à travers
+                    les arts visuels, la scène, la littérature et le design.
+                </p>
 
-    <div class="hero-content">
-        <h2>Plateforme artistiques</h2>
-        <p>Arts de la scène, arts visuels, arts littéraires, artisanat & design.</p>
-    </div>
-</section>
+                <div class="hero__actions">
+                    <a href="pages/gallery.html" class="btn btn-primary">Découvrir la galerie</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Notre vision</a>
+                </div>
+
+                <ul class="hero__stats" aria-label="Statistiques">
+                    <li><strong>12+</strong><span>projets</span></li>
+                    <li><strong>4</strong><span>domaines artistiques</span></li>
+                    <li><strong>100%</strong><span>créativité</span></li>
+                </ul>
+            </div>
+
+            <div class="hero__visual" aria-label="Image de présentation">
+                <div class="image-card image-card--main"></div>
+                <div class="image-card image-card--small"></div>
+                <div class="floating-badge">
+                    <span>Art contemporain</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="section-heading">
+                <span class="eyebrow eyebrow--dark">Nos univers</span>
+                <h3>Une plateforme pour chaque forme d’expression.</h3>
+            </div>
+
+            <div class="cards-grid">
+                <article class="art-card">
+                    <div class="icon">✦</div>
+                    <h4>Arts visuels</h4>
+                    <p>Peintures, illustrations, matières et compositions mémorables.</p>
+                </article>
+
+                <article class="art-card">
+                    <div class="icon">♫</div>
+                    <h4>Arts de scène</h4>
+                    <p>Performance, expression sonore et énergie culturelle en mouvement.</p>
+                </article>
+
+                <article class="art-card">
+                    <div class="icon">✍</div>
+                    <h4>Arts littéraires</h4>
+                    <p>Textes, récits et créations qui inspirent l’imaginaire collectif.</p>
+                </article>
+
+                <article class="art-card">
+                    <div class="icon">▣</div>
+                    <h4>Design & artisanat</h4>
+                    <p>Des objets et des idées conçus avec finesse, sensibilité et style.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <div class="showcase__text">
+                <span class="eyebrow eyebrow--dark">Notre démarche</span>
+                <h3>Un espace vivant, élégant et inspirant.</h3>
+                <p>
+                    Nous mettons en valeur des créations originales, où chaque œuvre est une
+                    invitation à ralentir, regarder, ressentir et imaginer autrement.
+                </p>
+                <a href="pages/contact.html" class="btn btn-primary">Nous contacter</a>
+            </div>
+
+            <div class="showcase__panel">
+                <div class="mini-card">
+                    <span class="mini-card__label">Mise en avant</span>
+                    <strong>Créations contemporaines</strong>
+                </div>
+                <div class="mini-card mini-card--dark">
+                    <span class="mini-card__label">Expérience</span>
+                    <strong>Visuel immersif</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Epol-Arts — Art, culture et création.</p>
+    </footer>
+</body>
+</html>
