@@ -1,0 +1,23 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgLit" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101828"/>
+      <stop offset="1" stop-color="#1B2A3A"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F7F2EA"/>
+      <stop offset="1" stop-color="#E4D7C5"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgLit)"/>
+  <circle cx="630" cy="120" r="120" fill="#F0C98D" opacity="0.2"/>
+  <rect x="170" y="90" width="246" height="360" rx="24" fill="url(#page)" transform="rotate(-10 170 90)"/>
+  <rect x="375" y="110" width="236" height="340" rx="24" fill="#13212E" stroke="rgba(255,255,255,0.08)" transform="rotate(8 375 110)"/>
+  <path d="M233 170H300" stroke="#B88952" stroke-width="8" stroke-linecap="round"/>
+  <path d="M233 220H310" stroke="#B88952" stroke-width="8" stroke-linecap="round"/>
+  <path d="M233 270H295" stroke="#B88952" stroke-width="8" stroke-linecap="round"/>
+  <path d="M436 185H555" stroke="#F0C98D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M436 240H550" stroke="#F0C98D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M436 295H525" stroke="#F0C98D" stroke-width="8" stroke-linecap="round"/>
+  <text x="90" y="545" fill="#EDF3F8" font-size="42" font-family="Arial, sans-serif" font-weight="700">Littérature</text>
+</svg>

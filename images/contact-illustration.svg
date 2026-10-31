@@ -1,0 +1,16 @@
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="galleryBg" x1="0" y1="0" x2="700" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1722"/>
+      <stop offset="1" stop-color="#1F2732"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" rx="30" fill="url(#galleryBg)"/>
+  <rect x="90" y="110" width="170" height="200" rx="18" fill="#1C2835"/>
+  <rect x="280" y="90" width="150" height="220" rx="18" fill="#A98CFF" opacity="0.75"/>
+  <rect x="455" y="120" width="160" height="190" rx="18" fill="#F0C98D" opacity="0.8"/>
+  <circle cx="175" cy="180" r="38" fill="#D9B174" opacity="0.9"/>
+  <path d="M110 270C160 235 190 220 220 220C245 220 255 240 280 270V310H110V270Z" fill="#F5F3FF" opacity="0.8"/>
+  <path d="M480 210C505 170 535 165 560 165C590 165 610 175 620 205V300H470L480 210Z" fill="#111926" opacity="0.9"/>
+  <text x="90" y="440" fill="#EDF3F8" font-size="40" font-family="Arial, sans-serif" font-weight="700">Galerie</text>
+</svg>

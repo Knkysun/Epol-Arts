@@ -1,443 +1,180 @@
-/* Style général Epol-Arts */
-:root {
-    --bg-900: #0b1017;
-    --bg-800: #121a24;
-    --bg-700: #182330;
-    --panel: rgba(20, 29, 39, 0.88);
-    --panel-strong: #1d2a36;
-    --card: #1a2430;
-    --card-soft: #212d39;
-    --text: #edf3f8;
-    --muted: #b7c2cf;
-    --line: rgba(255, 255, 255, 0.08);
-    --accent: #d9b174;
-    --accent-strong: #f0c98d;
-    --accent-soft: rgba(217, 177, 116, 0.18);
-    --purple: #a98cff;
-    --shadow: rgba(0, 0, 0, 0.35);
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epol-Arts | Portfolio</title>
+    <meta name="description" content="Epol-Arts, portfolio artistique présentant les Arts de la Scène, les Arts Littéraires et les Arts Visuels.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand-wrap">
+            <div class="brand-mark">E</div>
+            <h1>Epol-Arts</h1>
+        </div>
 
-* {
-    box-sizing: border-box;
-}
+        <nav class="main-nav" aria-label="Navigation principale">
+            <a href="#accueil" class="active">Accueil</a>
+            <a href="#scene">Arts de la Scène</a>
+            <a href="#litteraire">Arts Littéraires</a>
+            <a href="#visuel">Arts Visuels</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
 
-html {
-    scroll-behavior: smooth;
-}
+    <main id="accueil">
+        <section class="hero portfolio-hero">
+            <div class="hero__content">
+                <span class="eyebrow">Portfolio artistique</span>
+                <h2>Trois univers créatifs, une même passion.</h2>
+                <p>
+                    Epol-Arts explore les Arts de la Scène, les Arts Littéraires et les Arts Visuels
+                    à travers des œuvres, des récits et des performances qui donnent vie à une culture
+                    artistique contemporaine, vivante et engagée.
+                </p>
 
-body {
-    margin: 0;
-    font-family: 'Manrope', sans-serif;
-    background:
-        radial-gradient(circle at top left, rgba(169, 140, 255, 0.14), transparent 25%),
-        radial-gradient(circle at bottom right, rgba(217, 177, 116, 0.12), transparent 22%),
-        linear-gradient(135deg, var(--bg-900) 0%, var(--bg-800) 45%, var(--bg-700) 100%);
-    color: var(--text);
-    min-height: 100vh;
-}
+                <div class="hero__actions">
+                    <a href="#scene" class="btn btn-primary">Découvrir les catégories</a>
+                    <a href="pages/about.html" class="btn btn-secondary">Notre vision</a>
+                </div>
 
-img {
-    max-width: 100%;
-    display: block;
-}
+                <div class="portfolio-metrics">
+                    <div>
+                        <strong>03</strong>
+                        <span>catégories</span>
+                    </div>
+                    <div>
+                        <strong>24</strong>
+                        <span>projets</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>créativité</span>
+                    </div>
+                </div>
+            </div>
 
-a {
-    text-decoration: none;
-}
+            <div class="hero__visual portfolio-visual" aria-label="Portfolio visuel">
+                <div class="image-card image-card--main portfolio-main"></div>
+                <div class="image-card image-card--small portfolio-small"></div>
+                <div class="floating-badge">
+                    <span>Art vivant</span>
+                </div>
+            </div>
+        </section>
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    backdrop-filter: blur(16px);
-    background: rgba(10, 15, 20, 0.65);
-    border-bottom: 1px solid var(--line);
-}
+        <section class="category-intro" id="scene">
+            <div class="section-heading">
+                <span class="eyebrow eyebrow--dark">Nos catégories</span>
+                <h3>Une plateforme pensée pour chaque forme d’expression.</h3>
+            </div>
 
-.topbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            <div class="category-grid">
+                <article class="category-card category-card--scene">
+                    <div class="category-art category-art--scene" aria-label="Arts de la Scène"></div>
+                    <div class="category-content">
+                        <div class="category-icon">✦</div>
+                        <span class="category-tag">Scène</span>
+                        <h4>Arts de la Scène</h4>
+                        <p>
+                            Spectacles, performances, danse, musique et émotions vécues en direct.
+                        </p>
+                        <a href="pages/gallery.html">Explorer</a>
+                    </div>
+                </article>
 
-.brand-wrap {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+                <article class="category-card category-card--literary" id="litteraire">
+                    <div class="category-art category-art--literature" aria-label="Arts Littéraires"></div>
+                    <div class="category-content">
+                        <div class="category-icon">✍</div>
+                        <span class="category-tag">Littérature</span>
+                        <h4>Arts Littéraires</h4>
+                        <p>
+                            Textes, récits, poésie et créations écrites qui donnent matière à l’imaginaire.
+                        </p>
+                        <a href="pages/gallery.html">Explorer</a>
+                    </div>
+                </article>
 
-.brand-mark {
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
-    color: #111827;
-    font-weight: 800;
-    box-shadow: 0 12px 22px rgba(169, 140, 255, 0.28);
-}
+                <article class="category-card category-card--visual" id="visuel">
+                    <div class="category-art category-art--visual" aria-label="Arts Visuels"></div>
+                    <div class="category-content">
+                        <div class="category-icon">▣</div>
+                        <span class="category-tag">Visuel</span>
+                        <h4>Arts Visuels</h4>
+                        <p>
+                            Peinture, photographie, illustration et compositions visuelles qui racontent des mondes.
+                        </p>
+                        <a href="pages/gallery.html">Explorer</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-header h1 {
-    margin: 0;
-    font-size: clamp(1.5rem, 1.5vw + 1rem, 2.2rem);
-    color: var(--text);
-    letter-spacing: 0.02em;
-}
+        <section class="featured">
+            <div class="section-heading">
+                <span class="eyebrow eyebrow--dark">À la une</span>
+                <h3>Œuvres et créations remarquables</h3>
+            </div>
 
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+            <div class="featured-grid">
+                <article class="feature-card feature-card--large">
+                    <div class="feature-card__image image-one"></div>
+                    <div class="feature-card__content">
+                        <span>Arts Visuels</span>
+                        <h4>Velvet Forms</h4>
+                        <p>Étude sur la matière, la lumière et le volume.</p>
+                    </div>
+                </article>
 
-.main-nav a {
-    color: var(--muted);
-    padding: 10px 14px;
-    border-radius: 999px;
-    font-weight: 600;
-    transition: all 0.25s ease;
-}
+                <article class="feature-card">
+                    <div class="feature-card__image image-two"></div>
+                    <div class="feature-card__content">
+                        <span>Arts de la Scène</span>
+                        <h4>Silent Echo</h4>
+                    </div>
+                </article>
 
-.main-nav a:hover,
-.main-nav a.active {
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: inset 0 0 0 1px var(--line);
-}
+                <article class="feature-card">
+                    <div class="feature-card__image image-three"></div>
+                    <div class="feature-card__content">
+                        <span>Arts Littéraires</span>
+                        <h4>Night Script</h4>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 32px 80px;
-}
+        <section class="showcase showcase--portfolio">
+            <div class="showcase__text">
+                <span class="eyebrow eyebrow--dark">Notre approche</span>
+                <h3>Une curation artistique pensée pour chaque univers.</h3>
+                <p>
+                    Chaque catégorie met en avant une singularité : la scène comme expérience vivante,
+                    les écrits comme mémoire et imagination, et le visuel comme langage universel.
+                </p>
+                <a href="pages/gallery.html" class="btn btn-primary">Voir la galerie</a>
+            </div>
 
-.hero {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    align-items: center;
-    gap: 40px;
-    padding: 44px 0 24px;
-}
+            <div class="showcase__panel showcase__panel--portfolio">
+                <div class="mini-card">
+                    <span class="mini-card__label">Focus</span>
+                    <strong>Arts de la Scène</strong>
+                </div>
+                <div class="mini-card mini-card--dark">
+                    <span class="mini-card__label">Focus</span>
+                    <strong>Arts Littéraires & Visuels</strong>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.hero__content {
-    max-width: 620px;
-}
-
-.eyebrow {
-    display: inline-block;
-    color: var(--accent-strong);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(217, 177, 116, 0.1);
-    border: 1px solid rgba(217, 177, 116, 0.2);
-    margin-bottom: 20px;
-}
-
-.eyebrow--dark {
-    background: rgba(169, 140, 255, 0.08);
-    color: #d8c9ff;
-    border-color: rgba(169, 140, 255, 0.2);
-}
-
-.hero__content h2 {
-    margin: 0 0 18px;
-    font-size: clamp(2.3rem, 2vw + 1.1rem, 4.2rem);
-    line-height: 1.06;
-    letter-spacing: -0.05em;
-}
-
-.hero__content p {
-    margin: 0;
-    font-size: 1.08rem;
-    line-height: 1.8;
-    color: var(--muted);
-}
-
-.hero__actions {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-top: 28px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 22px;
-    border-radius: 999px;
-    font-weight: 700;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn:hover {
-    transform: translateY(-1px);
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
-    color: #12161d;
-    box-shadow: 0 18px 28px rgba(169, 140, 255, 0.25);
-}
-
-.btn-secondary {
-    color: var(--text);
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--line);
-}
-
-.hero__stats {
-    list-style: none;
-    padding: 0;
-    margin: 32px 0 0;
-    display: flex;
-    gap: 26px;
-    flex-wrap: wrap;
-}
-
-.hero__stats li {
-    min-width: 120px;
-    padding: 14px 18px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.hero__stats strong {
-    font-size: 1.5rem;
-    color: var(--text);
-}
-
-.hero__stats span {
-    color: var(--muted);
-    font-size: 0.8rem;
-}
-
-.hero__visual {
-    position: relative;
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-card {
-    position: absolute;
-    border-radius: 30px;
-    box-shadow: 0 28px 60px var(--shadow);
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.image-card--main {
-    width: 82%;
-    height: 410px;
-    right: 4%;
-    top: 24px;
-    background:
-        linear-gradient(135deg, rgba(12, 19, 28, 0.2), rgba(12, 19, 28, 0.55)),
-        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
-}
-
-.image-card--small {
-    width: 38%;
-    height: 210px;
-    left: 8%;
-    bottom: 18px;
-    background:
-        linear-gradient(135deg, rgba(20, 29, 39, 0.2), rgba(20, 29, 39, 0.7)),
-        url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.floating-badge {
-    position: absolute;
-    right: 12%;
-    bottom: 35px;
-    padding: 12px 18px;
-    border-radius: 14px;
-    background: rgba(11, 16, 23, 0.8);
-    border: 1px solid var(--line);
-    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
-}
-
-.floating-badge span {
-    color: var(--accent-strong);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-}
-
-.categories,
-.showcase {
-    margin-top: 54px;
-    padding-top: 20px;
-}
-
-.section-heading {
-    margin-bottom: 24px;
-}
-
-.section-heading h3,
-.showcase__text h3 {
-    margin: 12px 0 0;
-    font-size: clamp(1.8rem, 1vw + 1.2rem, 2.8rem);
-    line-height: 1.2;
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.art-card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    padding: 24px 22px;
-    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
-}
-
-.icon {
-    width: 54px;
-    height: 54px;
-    display: grid;
-    place-items: center;
-    border-radius: 16px;
-    background: linear-gradient(135deg, rgba(217, 177, 116, 0.18), rgba(169, 140, 255, 0.18));
-    color: var(--accent-strong);
-    font-size: 1.6rem;
-    margin-bottom: 18px;
-}
-
-.art-card h4 {
-    margin: 0 0 10px;
-    font-size: 1.3rem;
-}
-
-.art-card p {
-    margin: 0;
-    color: var(--muted);
-    line-height: 1.7;
-}
-
-.showcase {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 28px;
-    align-items: center;
-    padding: 38px 0 0;
-}
-
-.showcase__text p {
-    color: var(--muted);
-    font-size: 1.04rem;
-    line-height: 1.8;
-    margin: 18px 0 24px;
-}
-
-.showcase__panel {
-    display: grid;
-    gap: 18px;
-    min-height: 250px;
-}
-
-.mini-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
-    border: 1px solid var(--line);
-    border-radius: 24px;
-    padding: 28px 24px;
-    min-height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.15);
-}
-
-.mini-card--dark {
-    background: linear-gradient(135deg, rgba(169, 140, 255, 0.12), rgba(217, 177, 116, 0.1));
-}
-
-.mini-card__label {
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.72rem;
-    margin-bottom: 10px;
-}
-
-.mini-card strong {
-    font-size: 1.7rem;
-    line-height: 1.3;
-}
-
-.site-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 32px 50px;
-    color: var(--muted);
-    text-align: center;
-    border-top: 1px solid var(--line);
-}
-
-@media (max-width: 980px) {
-    .hero,
-    .showcase,
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hero__visual {
-        min-height: 420px;
-    }
-}
-
-@media (max-width: 720px) {
-    .topbar {
-        flex-direction: column;
-        gap: 16px;
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
-
-    .main-nav {
-        justify-content: center;
-    }
-
-    main {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hero {
-        padding-top: 18px;
-    }
-
-    .image-card--main {
-        width: 90%;
-        right: 0;
-    }
-
-    .image-card--small {
-        left: 4%;
-        width: 42%;
-    }
-
-    .hero__stats {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
+    <footer class="site-footer">
+        <p>© 2025 Epol-Arts — Arts de la Scène, Arts Littéraires et Arts Visuels.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121A24"/>
+      <stop offset="0.55" stop-color="#1A2430"/>
+      <stop offset="1" stop-color="#0B1017"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0C98D"/>
+      <stop offset="1" stop-color="#D9B174"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A98CFF"/>
+      <stop offset="1" stop-color="#7D6AE8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="300" cy="240" r="180" fill="url(#purple)" opacity="0.2"/>
+  <circle cx="880" cy="220" r="210" fill="url(#gold)" opacity="0.15"/>
+  <path d="M150 600C300 480 420 520 520 420C620 320 760 290 1020 400V760H150V600Z" fill="#1C2835"/>
+  <rect x="660" y="120" width="300" height="300" rx="30" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="705" y="168" width="210" height="210" rx="22" fill="url(#purple)" opacity="0.8"/>
+  <path d="M760 307L830 236L892 298L892 324L760 324V307Z" fill="#F8F1E7" opacity="0.9"/>
+  <rect x="210" y="156" width="270" height="360" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="235" y="185" width="220" height="160" rx="20" fill="url(#gold)" opacity="0.9"/>
+  <circle cx="345" cy="270" r="48" fill="#242F3B" opacity="0.8"/>
+  <path d="M260 464C330 432 370 430 426 478C399 527 346 560 285 560C250 560 218 537 202 506C221 498 240 487 260 464Z" fill="#E7E7E9" opacity="0.8"/>
+  <text x="120" y="680" fill="#EDF3F8" font-size="58" font-family="Arial, sans-serif" font-weight="700">Epol-Arts</text>
+  <text x="120" y="730" fill="#B7C2CF" font-size="28" font-family="Arial, sans-serif">Arts de la scène, du littéraire et du visuel</text>
+</svg>

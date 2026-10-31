@@ -1,0 +1,19 @@
+<svg width="700" height="500" viewBox="0 0 700 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="aboutBg" x1="0" y1="0" x2="700" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101A25"/>
+      <stop offset="1" stop-color="#1B2433"/>
+    </linearGradient>
+    <linearGradient id="aboutGold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F0C98D"/>
+      <stop offset="1" stop-color="#D9B174"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" rx="32" fill="url(#aboutBg)"/>
+  <circle cx="540" cy="120" r="100" fill="#A98CFF" opacity="0.2"/>
+  <circle cx="155" cy="385" r="115" fill="#F0C98D" opacity="0.18"/>
+  <path d="M110 330C170 260 235 230 300 220C350 212 420 228 485 330V420H110V330Z" fill="#1C2835"/>
+  <path d="M170 250L260 170L355 250L260 330L170 250Z" fill="url(#aboutGold)" opacity="0.9"/>
+  <path d="M320 240H510V420H260L320 240Z" fill="#0E1821" stroke="rgba(255,255,255,0.10)"/>
+  <text x="110" y="470" fill="#EDF3F8" font-size="40" font-family="Arial, sans-serif" font-weight="700">À propos</text>
+</svg>
