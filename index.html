@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epol-Arts | Accueil</title>
-    <meta name="description" content="Epol-Arts, plateforme artistique contemporaine pour les arts visuels, la scène, la littérature et le design.">
+    <title>Epol-Arts | Portfolio</title>
+    <meta name="description" content="Epol-Arts, portfolio artistique contemporain pour les arts visuels, la scène, la littérature et le design.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,95 +26,165 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero portfolio-hero">
             <div class="hero__content">
-                <span class="eyebrow">Créativité • Culture • Innovation</span>
-                <h2>Des arts qui inspirent, racontent et connectent.</h2>
+                <span class="eyebrow">Portfolio artistique</span>
+                <h2>Créer, exposer, raconter des univers.</h2>
                 <p>
-                    Epol-Arts célèbre les expressions artistiques contemporaines à travers
-                    les arts visuels, la scène, la littérature et le design.
+                    Une sélection de projets, d’œuvres et d’expériences visuelles où la création
+                    se mêle au design, à la performance et à l’émotion.
                 </p>
 
                 <div class="hero__actions">
-                    <a href="pages/gallery.html" class="btn btn-primary">Découvrir la galerie</a>
-                    <a href="pages/about.html" class="btn btn-secondary">Notre vision</a>
+                    <a href="pages/gallery.html" class="btn btn-primary">Voir les œuvres</a>
+                    <a href="pages/contact.html" class="btn btn-secondary">Collaborer</a>
                 </div>
 
-                <ul class="hero__stats" aria-label="Statistiques">
-                    <li><strong>12+</strong><span>projets</span></li>
-                    <li><strong>4</strong><span>domaines artistiques</span></li>
-                    <li><strong>100%</strong><span>créativité</span></li>
-                </ul>
+                <div class="portfolio-metrics">
+                    <div>
+                        <strong>38</strong>
+                        <span>œuvres</span>
+                    </div>
+                    <div>
+                        <strong>09</strong>
+                        <span>projets récents</span>
+                    </div>
+                    <div>
+                        <strong>05</strong>
+                        <span>disciplines</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="hero__visual" aria-label="Image de présentation">
-                <div class="image-card image-card--main"></div>
-                <div class="image-card image-card--small"></div>
+            <div class="hero__visual portfolio-visual" aria-label="Portfolio visuel">
+                <div class="image-card image-card--main portfolio-main"></div>
+                <div class="image-card image-card--small portfolio-small"></div>
                 <div class="floating-badge">
-                    <span>Art contemporain</span>
+                    <span>Edition 2025</span>
                 </div>
             </div>
         </section>
 
-        <section class="categories">
+        <section class="featured">
             <div class="section-heading">
-                <span class="eyebrow eyebrow--dark">Nos univers</span>
-                <h3>Une plateforme pour chaque forme d’expression.</h3>
+                <span class="eyebrow eyebrow--dark">Sélection</span>
+                <h3>Œuvres en vedette</h3>
             </div>
 
-            <div class="cards-grid">
-                <article class="art-card">
-                    <div class="icon">✦</div>
-                    <h4>Arts visuels</h4>
-                    <p>Peintures, illustrations, matières et compositions mémorables.</p>
+            <div class="featured-grid">
+                <article class="feature-card feature-card--large">
+                    <div class="feature-card__image image-one"></div>
+                    <div class="feature-card__content">
+                        <span>Design visuel</span>
+                        <h4>Velvet Forms</h4>
+                        <p>Étude sur la matière, la lumière et le volume.</p>
+                    </div>
                 </article>
 
-                <article class="art-card">
-                    <div class="icon">♫</div>
-                    <h4>Arts de scène</h4>
-                    <p>Performance, expression sonore et énergie culturelle en mouvement.</p>
+                <article class="feature-card">
+                    <div class="feature-card__image image-two"></div>
+                    <div class="feature-card__content">
+                        <span>Photographie</span>
+                        <h4>Silent Echo</h4>
+                    </div>
                 </article>
 
-                <article class="art-card">
-                    <div class="icon">✍</div>
-                    <h4>Arts littéraires</h4>
-                    <p>Textes, récits et créations qui inspirent l’imaginaire collectif.</p>
-                </article>
-
-                <article class="art-card">
-                    <div class="icon">▣</div>
-                    <h4>Design & artisanat</h4>
-                    <p>Des objets et des idées conçus avec finesse, sensibilité et style.</p>
+                <article class="feature-card">
+                    <div class="feature-card__image image-three"></div>
+                    <div class="feature-card__content">
+                        <span>Illustration</span>
+                        <h4>Urban Bloom</h4>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section class="showcase">
-            <div class="showcase__text">
-                <span class="eyebrow eyebrow--dark">Notre démarche</span>
-                <h3>Un espace vivant, élégant et inspirant.</h3>
-                <p>
-                    Nous mettons en valeur des créations originales, où chaque œuvre est une
-                    invitation à ralentir, regarder, ressentir et imaginer autrement.
-                </p>
-                <a href="pages/contact.html" class="btn btn-primary">Nous contacter</a>
+        <section class="gallery-section">
+            <div class="section-heading gallery-header">
+                <div>
+                    <span class="eyebrow eyebrow--dark">Galerie</span>
+                    <h3>Dernières créations</h3>
+                </div>
+                <div class="filter-tags" aria-label="Filtres galerie">
+                    <span class="tag active">Tout</span>
+                    <span class="tag">Visuels</span>
+                    <span class="tag">Scène</span>
+                    <span class="tag">Littéraire</span>
+                </div>
             </div>
 
-            <div class="showcase__panel">
+            <div class="gallery-grid">
+                <article class="gallery-item tall">
+                    <div class="gallery-image image-a"></div>
+                    <div class="gallery-meta">
+                        <h4>Metamorphosis</h4>
+                        <p>Art visuel • 2025</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-image image-b"></div>
+                    <div class="gallery-meta">
+                        <h4>Afterglow</h4>
+                        <p>Photographie • 2025</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-image image-c"></div>
+                    <div class="gallery-meta">
+                        <h4>Canvas Memory</h4>
+                        <p>Peinture • 2025</p>
+                    </div>
+                </article>
+                <article class="gallery-item wide">
+                    <div class="gallery-image image-d"></div>
+                    <div class="gallery-meta">
+                        <h4>Friction & Flow</h4>
+                        <p>Installation • 2025</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-image image-e"></div>
+                    <div class="gallery-meta">
+                        <h4>Night Script</h4>
+                        <p>Écriture • 2025</p>
+                    </div>
+                </article>
+                <article class="gallery-item tall">
+                    <div class="gallery-image image-f"></div>
+                    <div class="gallery-meta">
+                        <h4>Glass Horizon</h4>
+                        <p>Design • 2025</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="showcase showcase--portfolio">
+            <div class="showcase__text">
+                <span class="eyebrow eyebrow--dark">Approche</span>
+                <h3>Un portfolio pensé pour mettre chaque création en valeur.</h3>
+                <p>
+                    Chaque projet explore la relation entre matière, message et émotion. Le but est
+                    de rendre chaque œuvre lisible, mémorable et immersive.
+                </p>
+                <a href="pages/about.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+
+            <div class="showcase__panel showcase__panel--portfolio">
                 <div class="mini-card">
-                    <span class="mini-card__label">Mise en avant</span>
-                    <strong>Créations contemporaines</strong>
+                    <span class="mini-card__label">Focus</span>
+                    <strong>Création contemporaine</strong>
                 </div>
                 <div class="mini-card mini-card--dark">
-                    <span class="mini-card__label">Expérience</span>
-                    <strong>Visuel immersif</strong>
+                    <span class="mini-card__label">Méthode</span>
+                    <strong>Art direction & curation</strong>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 Epol-Arts — Art, culture et création.</p>
+        <p>© 2025 Epol-Arts — Portfolio artistique.</p>
     </footer>
 </body>
 </html>
